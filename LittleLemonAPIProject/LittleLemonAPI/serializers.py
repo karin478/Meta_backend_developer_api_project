@@ -1,3 +1,4 @@
+# Serializer and re-Serializer for the api, data processing between model and json
 from rest_framework import serializers
 from django.contrib.auth.models import User
 from decimal import Decimal
@@ -60,3 +61,5 @@ class UserSerilializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id','username','email']
+        
+        
