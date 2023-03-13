@@ -29,6 +29,9 @@ class MenuItemsView(generics.ListCreateAPIView):
     serializer_class = MenuItemSerializer
     search_fields = ['category__title']
     ordering_fields = ['price', 'inventory']
+    
+    def __str__(self):
+        return f'{self.title} : {str(self.price)}'
 
     def get_permissions(self):
         permission_classes = []
