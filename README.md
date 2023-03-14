@@ -1,4 +1,4 @@
-# Meta_backend_developer_capstone
+# Meta_backend_developer_api_project
 
  Meta back end developer certification project, Django API service
 
